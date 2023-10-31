@@ -14,5 +14,6 @@ async function getRandomAdvice(){
     const urlApi= "https://api.adviceslip.com/advice";
     const response = await fetch(urlApi);
     const data = await response.json();
+    console.log(data)
     return data.slip.advice;
 }
